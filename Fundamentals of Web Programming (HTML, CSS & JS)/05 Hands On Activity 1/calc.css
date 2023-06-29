@@ -1,0 +1,52 @@
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="column-"]{
+	float: left;
+	padding: 2px;
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+	.column-1 {width: 8.33%}
+	.column-2 {width: 16.66%}
+	.column-3 {width: 25%}
+	.column-4 {width: 33.33%}
+	.column-5 {width: 41.66%}
+	.column-6 {width: 50%}
+	.column-7 {width: 58.33%}
+	.column-8 {width: 66.66%}
+	.column-9 {width: 75%}
+	.column-10 {width: 83.33%}
+	.column-11 {width: 91.66%}
+	.column-12 {width: 100%}
+
+}
+*{
+	box-sizing: border-box;
+}
+.title{
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+	background-color:#00A86B;
+	font-size: 25px;
+	padding: 10px 15px 10px 15px;
+}
+input[type="button"]
+{
+	background-color:#29AB87;
+	color: #483C32;
+	width: 100%;
+	padding: 10px 15px 10px 15px;
+	font-size: 20px;
+}
+input[type="text"]
+{
+	text-align: right;
+	background-color: white;
+	width: 100%;
+	padding: 10px 15px 10px 15px;
+	font-size: 20px;
+}

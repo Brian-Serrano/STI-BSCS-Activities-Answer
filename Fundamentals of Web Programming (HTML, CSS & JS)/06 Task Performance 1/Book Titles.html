@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<button onclick="ori()">Original Order</button>
+		<button onclick="alp()">Alphabetical Order</button>
+		<button onclick="rev()">Reverse Order</button>
+		<script>
+			var x = new Array("Noli Me Tangere", "El Filibustrismo", "Florante at Laura", "Alamat ng Ibong Adarna")
+			function ori(){
+				document.write(x);
+			}
+			function alp(){
+				x.sort();
+				document.write(x);
+			}
+			function rev(){
+				x.reverse();
+				document.write(x);
+			}
+		</script>
+	</body>
+</html>

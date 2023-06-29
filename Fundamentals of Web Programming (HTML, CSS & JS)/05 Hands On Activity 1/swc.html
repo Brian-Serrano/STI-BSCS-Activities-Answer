@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Working Calculator</title>
+		<link rel="stylesheet" href="calc.css" type="text/css"/>
+	</head>
+	<body>
+		<div class="row title">
+			<div class="column-12">
+				Simple Working Calculator
+			</div>
+		</div>
+		<div class="row">
+			<div class="column-3">
+				<input type="button" value="c" onclick="clr()">
+			</div>
+			<div class="column-9">
+				<input type="text" id="num">
+			</div>
+			<div class="column-3">
+				<input type="button" value="+" onclick="dis('+')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="1" onclick="dis('1')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="2" onclick="dis('2')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="3" onclick="dis('3')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="-" onclick="dis('-')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="4" onclick="dis('4')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="5" onclick="dis('5')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="6" onclick="dis('6')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="*" onclick="dis('*')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="7" onclick="dis('7')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="8" onclick="dis('8')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="9" onclick="dis('9')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="/" onclick="dis('/')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="." onclick="dis('.')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="0" onclick="dis('0')">
+			</div>
+			<div class="column-3">
+				<input type="button" value="=" onclick="solve()">
+			</div>
+		</div>
+		<script>
+			function dis(val)
+			{
+				document.getElementById("num").value+=val
+			}
+			function solve()
+			{
+				let x = document.getElementById("num").value
+				let y = eval(x)
+				document.getElementById("num").value = y
+			}
+			function clr()
+			{
+				document.getElementById("num").value = ""
+			}
+		</script>
+	</body>
+</html>

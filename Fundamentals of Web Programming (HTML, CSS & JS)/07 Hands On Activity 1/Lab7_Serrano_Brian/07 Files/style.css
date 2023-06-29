@@ -1,0 +1,56 @@
+th, td{
+	 border: 1px solid #ddd;
+}
+table{
+	border-collapse:collapse;
+	width: 800px;
+	font-family: arial;
+}
+th{
+	height: 30px;
+	background-color: #1E90FF;
+	color: white;
+	font-size: 20px;
+	text-align: left;
+}
+td{
+	width:10%;
+	height:100px;
+	margin: 20px;
+	font-size: 18px;
+	vertical-align: top;
+}
+.spanColor p{
+	font-size:12px;
+	color: white;
+	padding: 2px; 
+	background-color: #3CB371;
+	cursor: pointer;
+}
+
+img{
+	width:600px;
+	height:400px;
+}
+.bgImg{
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: 600px 400px;
+}
+button {
+	background-color: Transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+	margin-left: 540px;
+	margin-top:10px;
+    cursor: pointer;
+	border-radius: 50%;
+	width:30px;
+	height: 30px;
+	font-family: consolas;
+}
+button:hover{
+	opacity:0.6;
+	transition: 0.1s;
+}

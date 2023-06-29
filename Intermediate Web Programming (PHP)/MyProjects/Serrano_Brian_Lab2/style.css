@@ -1,0 +1,94 @@
+/* rows and columns syntax */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+	margin-bottom:5px;
+}
+[class*="column-"] {
+    float: left;
+    padding: 2px;
+	width:100%;
+}
+
+@media only screen and (min-width: 768px){
+	.column-1 {width: 8.33%;}
+	.column-2 {width: 16.66%;}
+	.column-3 {width: 25%;}
+	.column-4 {width: 33.33%;}
+	.column-5 {width: 41.66%;}
+	.column-6 {width: 50%;}
+	.column-7 {width: 58.33%;}
+	.column-8 {width: 66.66%;}
+	.column-9 {width: 75%;}
+	.column-10 {width: 83.33%;}
+	.column-11 {width: 91.66%;}
+	.column-12 {width: 100%;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* css class selector*/
+.menu{
+	max-width:100%;
+}
+.menu ul {
+    list-style-type: none;
+	margin:0;
+	padding:0;
+}
+.menu li {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color:#1CA2BB;
+    color: white;
+}
+.menu li:hover {
+    background-color: #58DADA;
+}
+.menu .subject{
+	background-color:#005792;
+	font-size:20px;
+}
+
+.border-subjects{
+	padding:5px 5px 0px 5px;
+	border:5px solid #F7B633;
+}
+.border-profile{
+	padding:5px;
+	border:5px solid #F7B633;
+}
+.header-content{
+	background-color:#005E7C;
+	color: white;
+	font-size:25px;
+	padding: 10px 15px 10px 15px;
+	position:sticky;
+	width:100%;
+	top:0;
+	left:0;
+	text-align:right;
+	margin-bottom: 10px;
+}
+
+/* css element */
+img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	max-width: 100%;
+	width: 130px;
+	height: auto;
+	
+}
+
+/* css id selector*/
+#img-android{
+	max-width: 100%;
+	width:89px;
+	height: auto;
+}

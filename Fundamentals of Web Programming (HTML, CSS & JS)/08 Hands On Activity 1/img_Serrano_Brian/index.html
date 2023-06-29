@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Image Viewer DOM</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-3">
+
+            </div>
+            <div class="col-6">
+                <div id="picContainer">
+                    <div class="row">
+                        <div class="col-8">
+                            <img id="imgViewer" class="prev" src="">
+                        </div>
+                        <div class="col-4">
+                            <h3 id="topicTt1">Title</h3>
+                            <p id="topicDescript">Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+
+            </div>
+            <div class="col-2">
+                <div class="optContainer">
+                    <img id="imgOption1" alt="no image" src="bom.png" class="imgSelected" onmouseover="previewImg(this)">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="optContainer">
+                    <img id="imgOption2" alt="no image" src="dom.png" class="imgSelected" onmouseover="previewImg(this)">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="optContainer">
+                    <img id="imgOption3" alt="no image" src="intro.png" class="imgSelected" onmouseover="previewImg(this)">
+                </div>
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

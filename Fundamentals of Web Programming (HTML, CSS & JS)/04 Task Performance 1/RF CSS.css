@@ -1,0 +1,72 @@
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="column-"]{
+	float: left;
+	padding: 2px;
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+	.column-1 {width: 8.33%}
+	.column-2 {width: 16.66%}
+	.column-3 {width: 25%}
+	.column-4 {width: 33.33%}
+	.column-5 {width: 41.66%}
+	.column-6 {width: 50%}
+	.column-7 {width: 58.33%}
+	.column-8 {width: 66.66%}
+	.column-9 {width: 75%}
+	.column-10 {width: 83.33%}
+	.column-11 {width: 91.66%}
+	.column-12 {width: 100%}
+}
+*{
+	box-sizing: border-box;
+}
+.header{
+	background-color: #008080;
+	color: white;
+	font-size: 30px;
+	padding: 10px 15px 10px 15px;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: Elephant;
+}
+.text{
+	color: #483C32;
+	font-family: Tahoma;
+	font-size: 16px;
+	text-align: center;
+}
+p{
+	font-size: 30px;
+}
+input {
+  box-sizing: border-box;
+  font-family: Tahoma;
+  font-size: 20px;
+  color: #C0C0C0;
+  }
+.space{
+	margin-bottom: 12px;
+	margin-top: 12px;
+	text-align: left;
+}
+.button{
+	background-color: #40E0D0;
+	padding: 10px 15px 10px 15px;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+a{
+	color: white;
+}
+	

@@ -1,0 +1,95 @@
+/* rows and columns syntax */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+	margin-bottom:5px;
+}
+[class*="column-"] {
+    float: left;
+    padding: 2px;
+	width:100%;
+}
+
+@media only screen and (min-width: 768px){
+	.column-1 {width: 8.33%;}
+	.column-2 {width: 16.66%;}
+	.column-3 {width: 25%;}
+	.column-4 {width: 33.33%;}
+	.column-5 {width: 41.66%;}
+	.column-6 {width: 50%;}
+	.column-7 {width: 58.33%;}
+	.column-8 {width: 66.66%;}
+	.column-9 {width: 75%;}
+	.column-10 {width: 83.33%;}
+	.column-11 {width: 91.66%;}
+	.column-12 {width: 100%;}
+}
+
+* {
+    box-sizing: border-box;
+}
+img {
+	width: 100%;
+	border: 10px black solid;
+	border-radius: 10px;
+}
+.header-content{
+	background-color: green;
+	color: white;
+	font-size: 30px;
+	padding: 10px 15px 10px 15px;
+	position: sticky;
+	width: 100%;
+	text-align: center;
+	font-family: elephant;
+	border: 5px black solid;
+	border-radius: 10px;
+}
+p {
+	color: #483C32;
+	font-family: arial;
+	font-size: 25px;
+	text-align: justify;
+	padding: 10px;
+}
+h1 {
+	color: #483C32;
+	font-family: arial;
+	font-size: 40px;
+	padding: 10px;
+}
+.button {
+	padding: 20px;
+	background-color: red;
+	color: white;
+	margin: 10px;
+	font-family: tahoma;
+	border: 2px black solid;
+	border-radius: 10px;
+	font-size: 40px;
+	width: 100%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.table {
+	width: 100%;
+	font-size: 20px;
+}
+.chess {
+	padding: 20px;
+	background-color: grey;
+	color: white;
+	font-family: arial;
+	margin: 2px;
+}
+h2 {
+	color: #483C32;
+	font-family: arial;
+	font-size: 35px;
+	padding: 10px;
+}
